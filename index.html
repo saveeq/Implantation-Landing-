@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Имплантация зубов в клинике Dent Service</title>
+    <link rel="shortcut icon" href="assets/images/icon__logo.png" title="Favicon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=543a4dcc-226b-4b99-8a0b-71374fd51985&lang=ru_RU"
+        type="text/javascript"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+</head>
+
+<body ontouchstart="">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(99674783, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/99674783" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="snowflake-container"></div>
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <img src="assets/images/icon__logo.png" alt="" class="modal-teeth">
+            <span class="close">&times;</span>
+            <div id="formHead" class="formheader">Записаться на приём</div>
+            <form id="feedbackForm">
+                <label for="name" class="label-name">Имя:
+                    <input class="form-input" type="text" id="name" name="name" required>
+                </label>
+                <label for="phone" class="label-name">Номер телефона:
+                    <input type="tel" id="phone" name="phone" required placeholder="+79876543210"></label>
+                <div id="wrongnumber">Введите корректный номер телефона</div>
+                <button class="submit__button" type="submit">Отправить</button>
+            </form>
+            <div id="thankYouMessage" class="thank-you-message">
+                Спасибо!<br>
+                В ближайшее время с Вами свяжется наш администратор для уточнения деталей.
+            </div>
+            <div id="formPolice" class="formpolicy">В соответствии с требованиями ФЗ № 152 от 27.07.2006 г. «О
+                персональных данных» я
+                даю добровольное согласие на обработку своих персональных данных и соглашаюсь с <a
+                    href="https://dentserv.ru/policy" target="_blank" class="policy">политикой конфиденциальности.</a>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__wrap">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img class="logo__dentservice" src="assets/images/logodentservice2.svg" alt="Логотип клиники">
+                </div>
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link" href="#section1">Об имплантации</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link" href="#section2">Кейсы</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link" href="#section3">О клинике</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link" href="#section4">Цены</a>
+                        </li>
+                    </ul>
+                    <div class="button-number">
+                        <button type="button" class="feedbackButton" data-toggle="modal" data-target="#feedbackModal">
+                            Записаться на приём
+                        </button>
+                        <a href="tel:+7 (495) 422-09-22" class="header__number">+7 (495) 422-09-22</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="header__containerm">
+                <div class="logo__n__button">
+                    <div class="header__logo">
+                        <img class="logo__dentservice" src="assets/images/logodentservice2.svg" alt="Логотип клиники">
+                    </div>
+                    <div class="button__n__mobile">
+                        <a class="feedbackButton" data-toggle="modal" data-target="#feedbackModal">
+                            Записаться на приём
+                        </a>
+                        <div class="header__box__phones">
+                            <a href="tel:+7 (495) 422-09-22" class="second__number">+7 (495) 422-09-22</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header__box__locationm">
+        <div class="location__metro">
+            <div class="yasenevo__metro">
+                <div class="metro__logo">
+                    <img src="assets/images/metrologo.svg" alt="Логотип метро">
+                </div>
+                <div class="metro__value">Ясенево</div>
+            </div>
+            <div class="tepliy__metro">
+                <div class="metro__logo">
+                    <img src="assets/images/metrologo.svg" alt="Логотип метро">
+                </div>
+                <div class="metro__value">Теплый стан</div>
+            </div>
+        </div>
+        <div class="location__addres">
+            <address class="addres__walue">г. Москва, ул. Вильнюсская, д. 13</address>
+        </div>
+    </div>
+    <main class="main">
+        <div class="main__wrapper">
+            <section class="promo__information">
+                <div class="promo__medals">
+
+                    <div class="first__medal">
+                        <div class="medal__image">
+                            <img src="/assets/images/frist__medal.png" alt="Медаль Продокторов"
+                                class="first__medal__img">
+                        </div>
+                        <div class="second__medal__name">Победитель рейтинга StartSmile при поддержке ИД "КоммерсантЪ"
+                        </div>
+                        <div class="second__medal__namem">Победитель рейтинга StartSmile
+                        </div>
+                    </div>
+                    <div class="first__medal">
+                        <div class="medal__image">
+                            <img src="/assets/images/second__medal.png" alt="Медаль Продокторов"
+                                class="first__medal__img">
+                        </div>
+                        <div class="first__medal__name">Топ 5 частных стоматологий Москвы премии Продокторов</div>
+                        <div class="first__medal__namem">Топ 5 частных стоматологий (ПроДокторов)</div>
+                    </div>
+                    <div class="first__medal">
+                        <div class="medal__image">
+                            <img src="/assets/images/third__medal.png" alt="Медаль Продокторов"
+                                class="first__medal__img">
+                        </div>
+                        <div class="first__medal__name">Работаем с 2007 года!</div>
+                        <div class="first__medal__namem">Работаем с 2007 года!</div>
+                    </div>
+                </div>
+                <h1 class="shine-text">Имплантация зубов под ключ в Москве <br> от
+                    <span class="price"> 17 150 ₽ </span>в месяц* с <span class="garanty">пожизненной гарантией</span>!
+                </h1>
+                <div class="advantages__promo__text">
+                    <ul class="advantages__list">
+                        <li class="our__advantage">✔ Бесплатная консультация и план лечения</li>
+                        <li class="our__advantage">✔ Без боли, страхов и переплат</li>
+                        <li class="our__advantage">✔ Приживаемость 99%</li>
+                        <li class="our__advantage">✔ Рассрочка 0%</li>
+                    </ul>
+                </div>
+                <span class="price-note">*при оплате в рассрочку на 6 месяцев</span>
+
+                <div class="promo__image">
+                    <img src="assets/images/promo__implants.png" alt="" class="promo__implants">
+                </div>
+
+                <button type="button" class="feedbackButton main__button" data-toggle="modal"
+                    data-target="#feedbackModal">
+                    Рассчитать стоимость
+                </button>
+            </section>
+
+            <section class="info__cards">
+                <article class="card">
+                    <div class="second__card__info">Опыт врачей более 14 лет</div>
+                    <div class="second__card__img">
+                        <img src="assets/images/doctors__exp.svg" class="imagetwo" alt="Логотип компании KAVO">
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="first__card__info">Немецкое оборудование KAVO</div>
+                    <div class="first__card__img">
+                        <img src="assets/images/kavo__card.png" class="kavoimg" alt="Логотип компании KAVO">
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="third__card__info">Работаем по американским и европейским протоколам</div>
+                    <div class="third__card__img">
+                        <img src="assets/images/protocols.svg" class="imagetwo" alt="Логотип компании KAVO">
+                    </div>
+                </article>
+                <div class="promo__medalsm">
+                    <div class="first__medal">
+                        <div class="medal__image">
+                            <img src="/assets/images/frist__medal.png" alt="Медаль Продокторов"
+                                class="first__medal__img">
+                        </div>
+                        <div class="second__medal__name">Победитель рейтинга StartSmile при поддержке ИД "КоммерсантЪ"
+                        </div>
+                        <div class="second__medal__namem">Победитель рейтинга StartSmile
+                        </div>
+                    </div>
+                    <div class="first__medal">
+                        <div class="medal__image">
+                            <img src="/assets/images/second__medal.png" alt="Медаль Продокторов"
+                                class="first__medal__img">
+                        </div>
+                        <div class="first__medal__name">Топ 5 частных стоматологий Москвы премии Продокторов</div>
+                        <div class="first__medal__namem">Топ 5 частных стоматологий (ПроДокторов)</div>
+                    </div>
+                    <div class="first__medal">
+                        <div class="medal__image">
+                            <img src="/assets/images/third__medal.png" alt="Медаль Продокторов"
+                                class="first__medal__img">
+                        </div>
+                        <div class="first__medal__name">Работаем с 2007 года!</div>
+                        <div class="first__medal__namem">Работаем с 2007 года!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="price-calculator">
+                <div class="calculator__wrapper">
+                    <h2>Узнайте стоимость имплантации в вашем случае</h2>
+                    <div class="calculator-steps">
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                            <div class="progress-text">Шаг <span class="current-step">1</span> из 4</div>
+                        </div>
+
+                        <!-- Шаг 1 -->
+                        <div class="calculator-step active" id="step1">
+                            <h3 class="calculator-step__title">Сколько зубов нужно восстановить?</h3>
+                            <div class="teeth-buttons">
+                                <div class="teeth-selection">
+                                    <div class="teeth-image-container" data-teeth="1-2"> <img
+                                            src="assets/images/teeth-1.webp" alt="1-2 зуба" class="teeth-image">
+                                        <div class="teeth-label">1-2 зуба</div>
+                                    </div>
+                                    <div class="teeth-image-container" data-teeth="3-4"> <img
+                                            src="assets/images/teeth-2.webp" alt="3-4 зуба" class="teeth-image">
+                                        <div class="teeth-label">часть зубов</div>
+                                    </div>
+                                    <div class="teeth-image-container" data-teeth="5+"> <img
+                                            src="assets/images/teeth-3.webp" alt="5 и более зубов"
+                                            class="teeth-image">
+                                        <div class="teeth-label">почти все зубы</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Шаг 2 -->
+                        <div class="calculator-step" id="step2">
+                            <h3 class="calculator-step__title">Где требуется имплантация?</h3>
+                            <div class="jaw-buttons">
+                                <div class="jaw-selection">
+                                    <div class="jaw-image-container" data-jaw="upper">
+                                        <img src="assets/images/upper-jaw.png" alt="Верхняя челюсть" class="jaw-image">
+                                        <div class="jaw-label">Верхняя челюсть</div>
+                                    </div>
+                                    <div class="jaw-image-container" data-jaw="both">
+                                        <img src="assets/images/both-jaws.png" alt="Обе челюсти" class="jaw-image">
+                                        <div class="jaw-label">Обе челюсти</div>
+                                    </div>
+                                    <div class="jaw-image-container" data-jaw="lower">
+                                        <img src="assets/images/lower-jaw.png" alt="Нижняя челюсть" class="jaw-image">
+                                        <div class="jaw-label">Нижняя челюсть</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Шаг 3 -->
+                        <div class="calculator-step" id="step3">
+                            <h3 class="calculator-step__title">Есть ли у вас снимки?</h3>
+                            <div class="xray-buttons">
+                                <button class="xray-button" data-xray="yes">Да</button>
+                                <button class="xray-button" data-xray="no">Нет</button>
+                            </div>
+                        </div>
+
+                        <!-- Шаг 4 (Форма) -->
+                        <div class="calculator-step" id="step4">
+                            <h3 class="calculator-step__title">Получите расчет стоимости</h3>
+                            <form id="calculatorForm" class="calculator-form">
+                                <div class="form-group">
+                                    <input type="text" id="calc-name" name="name" placeholder="Ваше имя" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="calc-phone" name="phone" placeholder="+7 (___) ___-__-__"
+                                        required>
+                                </div>
+                                <button type="submit" class="submit-button">Получить расчет + бесплатную
+                                    консультацию</button>
+                            </form>
+                        </div>
+
+                        <div class="step-navigation">
+                            <button class="nav-button prev-step" disabled> <svg width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="nav-button next-step" disabled> <svg width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="risks1">
+                <div class="risks_h">
+                    <h2>почему нас выбирают?</h2>
+                </div>
+                <div class="infograph__wrapper">
+                    <div class="infograph__table">
+                        <div class="infograph__row">
+                            <div class="infograph__spec2">
+                                <div class="info__big" style="margin-left: 20px;">25000+</div>
+                                <div class="info__small">довольных пациентов</div>
+                            </div>
+                            <div class="infograph__spec">
+                                <div class="info__big__spec">
+                                    <svg class="inf__big" width="90" height="45" viewBox="0 0 90 45" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M67.7672 2.28505C62.3391 2.93895 57.1922 5.56864 51.4758 10.61C50.0836 11.8335 49.1273 12.7405 46.8563 14.9975C45.2391 16.6077 45 16.8116 44.8805 16.7483C44.8031 16.7061 44.1773 16.0944 43.4813 15.3843C35.4375 7.15067 30.2203 3.68427 24.1805 2.57333C20.243 1.84911 16.1578 2.30614 12.4453 3.88114C6.22266 6.52489 1.66641 12.0866 0.39375 18.5975C0.105469 20.053 0.0351562 20.8335 0.0351562 22.5702C0.0351562 25.3265 0.414844 27.6257 1.27266 30.0585C3.64922 36.8366 9.32344 41.4983 16.4883 42.5671C20.9461 43.235 25.8891 42.3843 30.2484 40.2116C31.957 39.3608 33.3984 38.4538 35.1914 37.1108C37.4484 35.4304 39.1008 33.9468 42.6516 30.4311C43.8891 29.2007 44.9508 28.1952 45 28.1952C45.0563 28.1952 45.5414 28.6593 46.0828 29.2218C47.2922 30.4804 50.2453 33.328 51.4969 34.446C57.2625 39.5858 61.6359 41.8639 67.1484 42.6233C67.5563 42.6796 68.5125 42.7077 69.6094 42.7077C71.107 42.7077 71.5711 42.6796 72.4219 42.546C76.9922 41.8429 80.8945 39.8811 84.0867 36.696C87.3 33.4827 89.3039 29.3483 89.8734 24.7499C90.007 23.66 89.9859 20.7913 89.8313 19.6874C89.2828 15.7429 87.8977 12.185 85.8375 9.44286C85.1695 8.54286 83.7703 7.10848 82.8492 6.38427C80.2899 4.3452 76.9641 2.96708 73.1602 2.37645C71.9508 2.19364 68.9836 2.13739 67.7672 2.28505ZM23.2523 10.7155C25.6148 11.2147 28.0055 12.3538 30.3539 14.0975C31.1906 14.7163 32.4422 15.7429 33.2578 16.4811C34.2844 17.4163 39.4453 22.4577 39.4453 22.528C39.4453 22.6405 34.9453 27.0913 33.8555 28.0686C30.3961 31.1483 27.1969 33.096 24.1875 33.9679C22.7672 34.3757 21.9305 34.4882 20.2148 34.4882C18.8789 34.4882 18.5625 34.4671 17.8664 34.3264C13.718 33.4897 10.6805 30.7827 9.35859 26.7538C8.23359 23.3155 8.44453 20.053 9.99141 17.0155C11.7633 13.528 14.9555 11.2218 18.893 10.5819C19.3359 10.5116 19.9195 10.4905 20.9531 10.5116C22.1625 10.5327 22.5352 10.5679 23.2523 10.7155ZM71.5078 10.5819C73.807 10.9054 75.7617 11.7843 77.4211 13.2397C80.5078 15.9397 81.9844 20.714 81.0563 25.0311C80.1141 29.4257 76.732 32.9835 72.4149 34.1366C71.3742 34.4108 70.4531 34.5233 69.2227 34.5233C67.043 34.5233 65.2922 34.0874 63.1055 33.0116C60.8063 31.8866 58.5914 30.2624 55.8141 27.6608C54.0703 26.0296 50.5898 22.6054 50.5688 22.4999C50.5477 22.3874 53.8453 19.0194 55.2656 17.7116C60.0609 13.2819 63.8508 11.1515 67.9219 10.5819C68.8359 10.4554 70.6078 10.4554 71.5078 10.5819Z"
+                                            fill="#1E96FC" />
+                                    </svg>
+                                    <svg class="inf__min" width="94" height="43" viewBox="0 0 94 43" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M64.7235 7.01777C60.4981 7.48566 56.4918 9.36728 52.042 12.9746C50.9583 13.85 50.214 14.499 48.4461 16.114C47.1873 17.2661 47.0012 17.412 46.9082 17.3667C46.848 17.3365 46.3608 16.8988 45.819 16.3907C39.5576 10.4993 35.4965 8.01895 30.795 7.22404C27.73 6.70584 24.5501 7.03286 21.6602 8.15982C16.8164 10.0515 13.2698 14.0311 12.2791 18.6899C12.0547 19.7313 12 20.2898 12 21.5324C12 23.5046 12.2956 25.1498 12.9633 26.8905C14.8132 31.7405 19.2301 35.0761 24.8073 35.8408C28.2773 36.3188 32.125 35.71 35.5184 34.1554C36.8484 33.5466 37.9704 32.8976 39.3661 31.9367C41.123 30.7343 42.4092 29.6727 45.1732 27.1572C46.1364 26.2767 46.9629 25.5573 47.0012 25.5573C47.045 25.5573 47.4226 25.8893 47.8441 26.2918C48.7855 27.1924 51.0842 29.23 52.0585 30.0299C56.5465 33.7076 59.9508 35.3377 64.2418 35.8811C64.5593 35.9213 65.3036 35.9414 66.1575 35.9414C67.3232 35.9414 67.6845 35.9213 68.3467 35.8257C71.9043 35.3226 74.942 33.9189 77.4268 31.6399C79.9281 29.3407 81.4879 26.3824 81.9313 23.0921C82.0352 22.3122 82.0188 20.2596 81.8984 19.4697C81.4715 16.6472 80.3933 14.1015 78.7896 12.1394C78.2697 11.4954 77.1805 10.4691 76.4635 9.95089C74.4713 8.49187 71.8824 7.50578 68.9214 7.08317C67.98 6.95236 65.6703 6.91212 64.7235 7.01777ZM30.0726 13.05C31.9116 13.4072 33.7724 14.2223 35.6005 15.47C36.2518 15.9127 37.226 16.6472 37.8609 17.1755C38.66 17.8446 42.6774 21.4519 42.6774 21.5022C42.6774 21.5827 39.1745 24.7674 38.3262 25.4667C35.6333 27.6703 33.143 29.0639 30.8005 29.6878C29.6949 29.9796 29.0436 30.0601 27.7081 30.0601C26.6682 30.0601 26.4219 30.045 25.8801 29.9444C22.6509 29.3457 20.2864 27.4087 19.2575 24.5259C18.3818 22.0657 18.546 19.7313 19.7501 17.5579C21.1293 15.0625 23.6142 13.4123 26.6792 12.9544C27.024 12.9041 27.4782 12.889 28.2828 12.9041C29.2242 12.9192 29.5143 12.9444 30.0726 13.05ZM67.6352 12.9544C69.425 13.1859 70.9465 13.8148 72.2382 14.8562C74.6409 16.7881 75.7903 20.2042 75.0678 23.2933C74.3344 26.4377 71.7018 28.9835 68.3413 29.8085C67.5312 30.0048 66.8142 30.0853 65.8564 30.0853C64.1597 30.0853 62.7969 29.7733 61.0947 29.0036C59.305 28.1986 57.5809 27.0364 55.419 25.1749C54.0616 24.0077 51.3524 21.5576 51.336 21.4821C51.3196 21.4016 53.8865 18.9917 54.9921 18.056C58.7248 14.8864 61.6749 13.362 64.8439 12.9544C65.5554 12.8639 66.9347 12.8639 67.6352 12.9544Z"
+                                            fill="#1E96FC" />
+                                    </svg>
+
+
+                                </div>
+                                <div class="info__small">пожизненная гарантия на имплант</div>
+                            </div>
+                        </div>
+                        <div class="infograph__row">
+                            <div class="infograph">
+                                <div class="info__big">2281</div>
+                                <div class="info__small">операцию провел наш имплантолог</div>
+                            </div>
+                            <div class="infograph">
+                                <div class="info__big">14+</div>
+                                <div class="info__small">лет - средний опыт наших специалистов</div>
+                            </div>
+                        </div>
+                        <div class="infograph__row">
+                            <div class="infograph">
+                                <div class="info__big">700+</div>
+                                <div class="info__small">отзывов о нас на различных ресурсах</div>
+                            </div>
+                            <div class="infograph">
+                                <div class="info__big">99.9%</div>
+                                <div class="info__small">приживаемость наших имплантов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/images/kavo.png" alt="" class="kavo__sheer">
+                </div>
+                <a class="feedbackButton types__button" data-toggle="modal" data-target="#feedbackModal">
+                    Записаться на приём
+                </a>
+            </section>
+
+            <section class="setup__implants" id="section1">
+                <div class="setup__implants_h">
+                    <h2>Установка имплантов с пожизненной гарантией – клиника Дент Сервис</h2>
+                </div>
+
+                <div class="setup__wrapper">
+                    <div class="setup__implants__info">
+                        Иногда из-за возрастных изменений, травм или заболеваний мы можем потерять один или несколько
+                        зубов. Но вернуть уверенность в улыбке с клиникой Дент Сервис легко! Титановый имплантат,
+                        заменяющий
+                        корень
+                        зуба,
+                        устанавливается на его место с
+                        высочайшей точностью. Это обеспечивает долговечность и комфорт, а опыт наших специалистов
+                        гарантирует,
+                        что
+                        приживаемость импланта составит 99.9%!
+                    </div>
+                    <div class="setup__implants__image">
+                        <img src="assets/images/setup__implants_img.png" alt="" class="promo__implants">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="implanting__types">
+                <div class="implanting__types_h">
+                    <h2>Ваш гид по современным видам имплантации</h2>
+                </div>
+                <h3 class="losung">Преимущества и особенности каждого метода</h3>
+                <div class="first__big__card">
+                    <h4 class="big__card__title">Классическая двухэтапная</h4>
+                    <div class="big__card__info">Выполняется после заживления лунки после удаления зуба. Включает в
+                        себя два этапа: <br><span class="twostep__text__hil">1. Установка
+                            импланта.</span> В кости прочно фиксируется титановый стержень.
+                        Затем иплантат закрывается винтом-заглушкой, а десна над ним ушивается.
+                        <br><span class="twostep__text__hil">2. Протезирование.</span> Врач извлекает
+                        заглушку и
+                        ставит формирователь – так создается этетический десневой контур.
+                        Через 14 дней вместо формирователя ставится абатмент (переходная заглушка), а затем фиксируется
+                        готовая коронка.<br>
+                    </div>
+                    <div class="big__card__infom">Выполняется после заживления лунки после удаления зуба. Включает в
+                        себя два этапа — <span class="twostep__text__hil">установка
+                            импланта</span> и <span class="twostep__text__hil">протезирование.</span> В кости прочно
+                        фиксируется титановый стержень.
+                        Далее иплантат закрывается винтом-заглушкой, который затем заменяется на готовую коронку.
+                    </div>
+                    <div class="two__step__image">
+                        <img src="assets/images/twostep 1.png" alt="" class="twostep">
+                    </div>
+                    <div class="advantages__m">
+                        <div class="one__adv">
+                            <img src="assets/images/adv__one.png" alt="" class="adv__one">
+                            <div class="one__adv__text">Приживаемость - 99.9%</div>
+                        </div>
+                        <div class="one__adv">
+                            <img src="assets/images/adv__two.png" alt="" class="adv__one">
+                            <div class="one__adv__text">Эстетичность за счёт формирования десневого края</div>
+                        </div>
+                        <div class="one__adv">
+                            <img src="assets/images/adv__three.png" alt="" class="adv__one">
+                            <div class="one__adv__text">Легко прогнозируемый результат</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second__big__card">
+                    <div class="big__card__title">Одноэтапная с немедленной нагрузкой</div>
+                    <div class="big__card__info">Время на приживление имплантов не требуется, т.к. сразу после установки
+                        имплантата дается <span class="twostep__text__hil">моментальная нагрузка</span>:
+                        имплантолог устанавливает
+                        временную коронку или протез. Через 3-5 месяцев стержень
+                        приживается, и временный протез заменятся постоянным.
+                    </div>
+                    <div class="big__card__infom">Время на приживление имплантов не требуется, т.к. сразу после
+                        установки
+                        имплантата дается <span class="twostep__text__hil">моментальная нагрузка</span>:
+                        имплантолог устанавливает
+                        временную коронку или протез. Через 3-5 месяцев стержень
+                        приживается, и временный протез заменятся постоянным.
+                    </div>
+                    <div class="one__step__image">
+                        <img src="assets/images/onestep.png" alt="" class="twostep">
+                    </div>
+                    <div class="advantages__m">
+                        <div class="one__adv">
+                            <img src="assets/images/adv__one.png" alt="" class="adv__one">
+                            <div class="one__adv__text">Функциональность зуба восстанавливается в день установки</div>
+                        </div>
+                        <div class="one__adv">
+                            <img src="assets/images/adv__two.png" alt="" class="adv__one">
+                            <div class="one__adv__text">Лечение длится одну неделю</div>
+                        </div>
+                        <div class="one__adv">
+                            <img src="assets/images/adv__three.png" alt="" class="adv__one">
+                            <div class="one__adv__text">По физиологическим показаниям подходит не всем</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="feedbackButton types__button" data-toggle="modal" data-target="#feedbackModal">
+                    Записаться на приём
+                </a>
+            </section>
+            <section class="implantation__steps">
+                <div class="implantation__steps_h">
+                    <h2>Как устанавливают импланты: основные этапы</h2>
+                </div>
+                <div class="first__stage__content">
+                    <div class="stage__one__step__one">
+                        <div class="step__one">
+                            <img src="assets/images/s1s1.png" alt="" class="stage__one__step__one__img">
+                            <div class="step__one__text">Диагностика на основе КТ</div>
+                        </div>
+                        <div class="step__one__info"><span class="twostep__text__hil1">1. Стоматолог
+                                проводит осмотр полости рта</span>, затем, на основе рентген или КТ снимков делает
+                            оценку
+                            состояния
+                            костной ткани и определеляет оптимальное место для
+                            имплантата.
+                        </div>
+                    </div>
+                    <div class="stage__one__step__two">
+                        <div class="step__one__info"><span class="twostep__text__hil1">2. Используя премиальные
+                                обезболивающие
+                                препараты</span>, стоматолог
+                            устанавливает в челюстную кость
+                            титановый имплантат. После этого десна зашивается, и начинается процесс остеоинтеграции.
+                        </div>
+                        <div class="step__one">
+                            <img src="assets/images/s1s2.png" alt="" class="stage__one__step__one__img">
+                            <div class="step__one__text2">Операция по установке импланта</div>
+                        </div>
+
+                    </div>
+                    <div class="stage__one__step__one">
+                        <div class="step__one2">
+                            <img src="assets/images/s2s2.png" alt="" class="stage__one__step__one__img">
+                            <div class="step__one__text">Снятие слепков и изготовление коронки</div>
+                        </div>
+                        <div class="step__one1">
+                            <img src="assets/images/s2s2.png" alt="" class="stage__one__step__one__img">
+                            <div class="step__one__text">Снятие слепков и изготовление коронки</div>
+                        </div>
+                        <div class="step__one__info"><span class="twostep__text__hil1">3. После завершения
+                                остеоинтеграции</span>, когда
+                            имплантат надежно срастается с костью, стоматолог устанавливает абатмент – специальный
+                            соединительный элемент. Затем на абатмент фиксируется постоянная коронка, которая выглядит и
+                            функционирует как натуральный зуб.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pluses">
+                <div class="pluses_h">
+                    <h2>Установив имплант, вы сможете...</h2>
+                </div>
+                <div class="plus__cards">
+                    <img src="assets/images/plus1.png" alt="" class="first__pluss">
+                    <img src="assets/images/plus2.png" alt="" class="second__pluss">
+                    <img src="assets/images/plus3.png" alt="" class="third__pluss">
+                </div>
+                <div class="plus__cardsm">
+                    <div class="first__plus__card">
+                        <img src="assets/images/plus1m.png" alt="" class="third__pluss">
+                    </div>
+                    <div class="pluses-wrapper">
+                        <img src="assets/images/plus2m.png" alt="" class="second__pluss">
+                        <img src="assets/images/plus3m.png" alt="" class="first__pluss">
+                    </div>
+                </div>
+            </section>
+            <section class="clinic__cases" id="section2">
+                <div class="clinic__cases_h">
+                    <h2>Реальные примеры успешной имплантации</h2>
+                </div>
+                <div class="hint__for__cases">
+                    Наведи курсор, чтобы увидеть результат
+                </div>
+                <div class="cases__gallery">
+                    <div class="first__gallery__row">
+                        <div class="case2">
+                            <img src="assets/images/case_two_noblack.jpg" alt="" class="case2__img">
+                            <img src="assets/images/case_two_black.jpg" alt="" class="case2b__img">
+                        </div>
+                        <div class="case3">
+                            <img src="assets/images/case_three_noblack.jpg" alt="" class="case3__img">
+                            <img src="assets/images/case_three_black.jpg" alt="" class="case3b__img">
+                        </div>
+                        <div class="case1">
+                            <img src="assets/images/case_one_noblack.jpg" alt="" class="case1__img">
+                            <img src="assets/images/case_one_black.jpg" alt="" class="case1b__img">
+                        </div>
+                    </div>
+                    <div class="first__gallery__row">
+                        <div class="case4">
+                            <img src="assets/images/case_four_noblack.jpg" alt="" class="case4__img">
+                            <img src="assets/images/case_four_black.jpg" alt="" class="case4b__img">
+
+                        </div>
+                        <div class="case5">
+                            <img src="assets/images/case_five_noblack.jpg" alt="" class="case5__img">
+                            <img src="assets/images/case_five_black.jpg" alt="" class="case5b__img">
+
+                        </div>
+                        <div class="case6">
+                            <img src="assets/images/case_six_noblack.jpg" alt="" class="case6__img">
+                            <img src="assets/images/case_six_black.jpg" alt="" class="case6b__img">
+                        </div>
+                    </div>
+                    <div class="second__gallery__row">
+                        <div class="casem">
+                            <img src="assets/images/case1m.png" alt="">
+                        </div>
+                        <div class="casem">
+                            <img src="assets/images/case2m.png" alt="">
+                        </div>
+                    </div>
+                    <div class="second__gallery__row">
+                        <div class="casem">
+                            <img src="assets/images/case3m.png" alt="">
+                        </div>
+                        <div class="casem">
+                            <img src="assets/images/case4m.png" alt="">
+                        </div>
+                    </div>
+                    <div class="second__gallery__row">
+                        <div class="casem">
+                            <img src="assets/images/case5m.png" alt="">
+                        </div>
+                        <div class="casem">
+                            <img src="assets/images/case6m.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about__doctor-new" id="section3">
+                <div class="about__doctor_h">
+                    <h2>Добро пожаловать в Дент Сервис!</h2>
+                </div>
+                <div class="losung">
+                    Ваше лечение проведут профессионалы стоматологического дела!
+                </div>
+                <div class="doctors-container">
+                    <div class="doctor-card">
+                        <img src="assets/images/stepovoy1.png" alt="" class="doctor-photo">
+                        <button data-dialog="dialog1" class="doctor-button-info">
+                            <div class="doctor-fio">
+                                <div class="doctor-name">Степовой Иван Николаевич</div>
+                                <img src="assets/images/arrow1.png" alt="" class="doctor-arrow">
+                            </div>
+                            <div class="doctor-readmore">Узнать больше</div>
+                        </button>
+                    </div>
+                    <dialog id="dialog1">
+                        <button class="doctorInfo__close">&times;</button>
+                        <h2>Степовой Иван Николаевич</h2>
+                        <div class="doctor-dialog-wrapper">
+                            <img src="assets/images/stepovoy.png" alt="" class="doctor__photo">
+                            <div class="doctor-dialog__info">
+                                <span class="stepovoy__spec">Стоматолог имплантолог-хирург, ортопед</span>
+                                <span class="stepovoy__staj">Стаж работы — 18 лет</span>
+                                <div class="specialization">
+                                    Специализации:
+                                    <ul class="spec__list">
+                                        <li class="spec__data">Композитная реставрация зубов</li>
+                                        <li class="spec__data">Протезирование и имплантация</li>
+                                        <li class="spec__data">Удаление зубов любой сложности</li>
+                                    </ul>
+                                </div>
+                                <a class="feedbackButton dialog__button" data-toggle="modal"
+                                    data-target="#feedbackModal">
+                                    Записаться на консультацию
+                                </a>
+                            </div>
+                        </div>
+                    </dialog>
+                    <div class="doctor-card">
+                        <img src="assets/images/novik1.jpg" alt="" class="doctor-photo">
+                        <button data-dialog="dialog2" class="doctor-button-info">
+                            <div class="doctor-fio">
+                                <div class="doctor-name">Новик Алексей Николаевич</div>
+                                <img src="assets/images/arrow1.png" alt="" class="doctor-arrow">
+                            </div>
+                            <div class="doctor-readmore">Узнать больше</div>
+                        </button>
+                    </div>
+                    <dialog id="dialog2">
+                        <button class="doctorInfo__close">&times;</button>
+                        <h2>Новик Алексей Николаевич</h2>
+                        <div class="doctor-dialog-wrapper">
+                            <img src="assets/images/novik.png" alt="" class="doctor__photo">
+                            <div class="doctor-dialog__info">
+                                <span class="stepovoy__spec">Стоматолог ортопед</span>
+                                <span class="stepovoy__staj">Стаж работы — 25 лет</span>
+                                <div class="specialization">
+                                    Специализации:
+                                    <ul class="spec__list">
+                                        <li class="spec__data">Композитная реставрация зубов</li>
+                                        <li class="spec__data">Исправление прикуса протезированием</li>
+                                        <li class="spec__data">Эстетическая реставрация зубов</li>
+                                        <li class="spec__data">Стоматологические виниры</li>
+                                    </ul>
+                                </div>
+                                <a class="feedbackButton dialog__button" data-toggle="modal"
+                                    data-target="#feedbackModal">
+                                    Записаться на консультацию
+                                </a>
+                            </div>
+                        </div>
+                    </dialog>
+                    <div class="doctor-card">
+                        <img src="assets/images/tregub.png" alt="" class="doctor-photo">
+                        <button data-dialog="dialog3" class="doctor-button-info">
+                            <div class="doctor-fio">
+                                <div class="doctor-name">Трегубенко Дмитрий Константинович
+                                </div>
+                                <img src="assets/images/arrow1.png" alt="" class="doctor-arrow">
+                            </div>
+                            <div class="doctor-readmore">Узнать больше</div>
+                        </button>
+                    </div>
+                    <dialog id="dialog3">
+                        <button class="doctorInfo__close">&times;</button>
+                        <h2>Трегубенко Дмитрий Константинович</h2>
+                        <div class="doctor-dialog-wrapper">
+                            <img src="assets/images/tregub.png" alt="" class="doctor__photo">
+                            <div class="doctor-dialog__info">
+                                <span class="stepovoy__spec">Стоматолог хирург-имплантолог</span>
+                                <span class="stepovoy__staj">Стаж работы — 14 лет</span>
+                                <div class="specialization">
+                                    Специализации:
+                                    <ul class="spec__list">
+                                        <li class="spec__data">Удаление зубов (в том числе ретинированных)</li>
+                                        <li class="spec__data">Зубосохраняющие операции (резекция, гемисекция)</li>
+                                        <li class="spec__data">Работа с мягкими тканями (пластики, мягкотканная
+                                            аугментация)</li>
+                                    </ul>
+                                </div>
+                                <a class="feedbackButton dialog__button" data-toggle="modal"
+                                    data-target="#feedbackModal">
+                                    Записаться на консультацию
+                                </a>
+                            </div>
+                        </div>
+                    </dialog>
+                    <div class="doctor-card">
+                        <img src="assets/images/fomin.png" alt="" class="doctor-photo">
+                        <button data-dialog="dialog4" class="doctor-button-info">
+                            <div class="doctor-fio">
+                                <div class="doctor-name">Фоминых Инна Геннадиевна</div>
+                                <img src="assets/images/arrow1.png" alt="" class="doctor-arrow">
+                            </div>
+                            <div class="doctor-readmore">Узнать больше</div>
+                        </button>
+                    </div>
+                    <dialog class="dialogg" id="dialog4">
+                        <button class="doctorInfo__close">&times;</button>
+                        <h2>Фоминых Инна Геннадиевна</h2>
+                        <div class="doctor-dialog-wrapper">
+                            <img src="assets/images/fomin.png" alt="" class="doctor__photo">
+                            <div class="doctor-dialog__info">
+                                <span class="stepovoy__spec">Стоматолог терапевт</span>
+                                <span class="stepovoy__staj">Стаж работы — 36 лет</span>
+                                <div class="specialization">
+                                    Специализации:
+                                    <ul class="spec__list">
+                                        <li class="spec__data">Лечение клиновидного дефекта зубов</li>
+                                        <li class="spec__data">Терапевтическая стоматология</li>
+                                        <li class="spec__data">Лечение кариеса лазером без бормашины</li>
+                                    </ul>
+                                </div>
+                                <a class="feedbackButton dialog__button" data-toggle="modal"
+                                    data-target="#feedbackModal">
+                                    Записаться на консультацию
+                                </a>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="photos-wrapper">
+                    <div class="first-column">
+                        <div class="clinic-description">Немецкое качество — 3D компьютерная томография и
+                            установки KAVO</div>
+                        <div class="clinic-description">Все кабинеты помимо мощных стоматологических
+                            LED-ламп
+                            оснащены профессиональными бестеневыми операционными светильниками</div>
+                        <div class="clinic-description">Зарубежные стандарты безопасности! Премиальная
+                            стерилизация Melag и KAVO</div>
+                    </div>
+                    <div class="second-column">
+                        <img src="assets/images/clinic3.png" alt="" class="clinic3">
+                        <img src="assets/images/clinic4.png" alt="" class="clinic4">
+                        <img src="assets/images/clinic5.png" alt="" class="clinic5">
+                    </div>
+                    <div class="third-column">
+                        <img src="assets/images/clinic1.png" alt="" class="clinic1">
+                        <img src="assets/images/clinic2.png" alt="" class="clinic2">
+                    </div>
+                </div>
+                <div class="photos-wrapper-mob">
+                    <div class="photos-wrapper-mob__col1">
+                        <div class="clinic-description">Немецкое качество — 3D компьютерная томография и
+                            установки KAVO</div>
+                        <div class="clinic-description">Все кабинеты помимо мощных стоматологических
+                            LED-ламп
+                            оснащены профессиональными бестеневыми операционными светильниками</div>
+                        <div class="clinic-description">Зарубежные стандарты безопасности! Премиальная
+                            стерилизация Melag и KAVO</div>
+                        <img src="assets/images/clinic3.png" alt="" class="clinic3">
+                        <img src="assets/images/clinic4.png" alt="" class="clinic4">
+                    </div>
+                    <div class="photos-wrapper-mob__col2">
+                        <img src="assets/images/clinic1.png" alt="" class="clinic1">
+                        <img src="assets/images/clinic2.png" alt="" class="clinic2">
+                    </div>
+                </div>
+            </section>
+            <section class="prices" id="section4">
+                <div class="prices_h">
+                    <h2>Стоимость имплантации: прозрачность и доступность</h2>
+                </div>
+                <div class="price__cards">
+                    <div class="card__one__two">
+                        <div class="price__card__one">
+                            <div class="name_n_flag">
+                                <div class="name_n_country">
+                                    <div class="name__astra">
+                                        Astra Tech
+                                    </div>
+                                    <div class="country__astra">
+                                        Швеция
+                                    </div>
+                                </div>
+                                <img src="assets/images/sweden__flag.svg" alt="" class="usa__flag">
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie"
+                                style="width: 400px; height: 4px;">
+                            <div class="price__text">
+                                <div class="rassr">Рассрочка 0% от 3 до 10 месяцев!</div>
+                                <div class="good__price">24 000 ₽ / месяц</div>
+                                <span class="price__key">или</span>
+                                <div class="full__price"> <span class="bad__price">172 800 ₽</span>144 000 ₽</div>
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie"
+                                style="width: 400px; height: 4px;">
+                            <div class="in__price__text">
+                                В стоимость включено:<br>
+                                - осмотр, компьютерная томография, индивидуальный план лечения;<br>
+                                - установка импланта ASTRA TECH;<br>
+                                - установка формирователя десны и абатмента Astra;<br>
+                                - циркониевая коронка.
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie1"
+                                style="width: 400px; height: 4px;">
+                            <a class="feedbackButton price__button" data-toggle="modal" data-target="#feedbackModal">
+                                Записаться на консультацию
+                            </a>
+                        </div>
+                        <div class="price__card__three">
+                            <div class="name_n_flag">
+                                <div class="name_n_country">
+                                    <div class="name__osstem">
+                                        Osstem
+                                    </div>
+                                    <div class="country__osstem">
+                                        Корея
+                                    </div>
+                                </div>
+                                <img src="assets/images/korea__flag.svg" alt="" class="korea__flag">
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie"
+                                style="width: 400px; height: 4px;">
+                            <div class="price__text">
+                                <div class="rassr">Рассрочка 0% от 3 до 10 месяцев!</div>
+                                <div class="good__price">17 150 ₽/ месяц</div>
+                                <span class="price__key">или</span>
+                                <div class="full__price"> <span class="bad__price">123 500 ₽</span>102 900 ₽</div>
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie"
+                                style="width: 400px; height: 4px;">
+                            <div class="in__price__text">
+                                В стоимость включено:<br>
+                                - осмотр, компьютерная томография, индивидуальный план лечения;<br>
+                                - установка импланта OSSTEM;<br>
+                                - установка формирователя десны и абатмента OSSTEM;<br>
+                                - циркониевая коронка.
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie1"
+                                style="width: 400px; height: 4px;">
+                            <a class="feedbackButton price__button2" data-toggle="modal" data-target="#feedbackModal">
+                                Записаться на консультацию
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card__three__four">
+                        <div class="price__card__four">
+                            <div class="name_n_flag">
+                                <div class="name_n_country">
+                                    <div class="name__ankylos">
+                                        Ankylos
+                                    </div>
+                                    <div class="country__ankylos">
+                                        Германия
+                                    </div>
+                                </div>
+                                <img src="assets/images/germany.svg" alt="" class="korea__flag">
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie"
+                                style="width: 400px; height: 4px;">
+                            <div class="price__text">
+                                <div class="rassr">Рассрочка 0% от 3 до 10 месяцев!</div>
+                                <div class="good__price">22 800 ₽/ месяц</div>
+                                <span class="price__key">или</span>
+                                <div class="full__price"> <span class="bad__price">164 280 ₽</span>136 900 ₽</div>
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie"
+                                style="width: 400px; height: 4px;">
+                            <div class="in__price__text">
+                                В стоимость включено:<br>
+                                - осмотр, компьютерная томография, индивидуальный план лечения;<br>
+                                - установка импланта Ankylos;<br>
+                                - установка формирователя десны и абатмента Ankylos;<br>
+                                - циркониевая коронка.
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie1"
+                                style="width: 400px; height: 4px;">
+                            <a class="feedbackButton price__button2" data-toggle="modal" data-target="#feedbackModal">
+                                Записаться на консультацию
+                            </a>
+                        </div>
+                        <div class="price__card__two">
+                            <div class="name_n_flag">
+                                <div class="name_n_country">
+                                    <div class="name__straumann">
+                                        Straumann
+                                    </div>
+                                    <div class="country__straumann">
+                                        Швейцария
+                                    </div>
+                                </div>
+                                <img src="assets/images/sw__flag.svg" alt="" class="sw__flag">
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie"
+                                style="width: 400px; height: 4px;">
+                            <div class="price__text">
+                                <div class="rassr">Рассрочка 0% от 3 до 10 месяцев!</div>
+                                <div class="good__price">24 500 ₽/ месяц</div>
+                                <span class="price__key">или</span>
+                                <div class="full__price"> <span class="bad__price">176 880 ₽</span>147 400 ₽</div>
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie"
+                                style="width: 400px; height: 4px;">
+                            <div class="in__price__text">
+                                В стоимость включено:<br>
+                                - осмотр, компьютерная томография, индивидуальный план лечения;<br>
+                                - установка Premium импланта Straumann SLActive;<br>
+                                - установка формирователя десны и абатмента Straumann;<br>
+                                - циркониевая коронка.
+                            </div>
+                            <img src="assets/images/price__card__tie.svg" alt="" class="price__card__tie1"
+                                style="width: 400px; height: 4px;">
+                            <a class="feedbackButton price__button" data-toggle="modal" data-target="#feedbackModal">
+                                Записаться на консультацию
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="reviews_h">
+                    <h2>Оценки и отзывы довольных пациентов</h2>
+                </div>
+                <div class="reviews__wrap">
+                    <div class="services-reviews">
+                        <div class="services-reviews_row">
+                            <a href="https://go.2gis.com/zWW9g" class="service-review">
+                                <div class="service-review__logo">
+                                    <img src="assets/images/2gis.png" alt="" class="service-review__logo__img">
+                                    <span class="rev-count">21 отзыв</span>
+                                </div>
+                                <div class="service-review__mark">
+                                    <span class="rev-number">4,8/5</span>
+                                    <img src="assets/images/48star.png" alt="" class="stars">
+                                </div>
+                            </a>
+                            <a target="_blank" rel="noopener"
+                                href="https://www.yell.ru/moscow/com/stomatologicheskaya-klinika-dent-servis_5629142/"
+                                class="service-review">
+                                <div class="service-review__logo">
+                                    <img src="assets/images/yell.png" alt="" class="service-review__logo__img">
+                                    <span class="rev-count">91 отзыв</span>
+                                </div>
+                                <div class="service-review__mark">
+                                    <span class="rev-number">4,8/5</span>
+                                    <img src="assets/images/48star.png" alt="" class="stars">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services-reviews_row">
+                            <a target="_blank" rel="noopener"
+                                href="https://zoon.ru/msk/medical/stomatologicheskaya_klinika_dent_servis_v_yasenevo/"
+                                class="service-review">
+                                <div class="service-review__logo">
+                                    <img src="assets/images/zoon.png" alt="" class="service-review__logo__img">
+                                    <span class="rev-count">195 отзывов</span>
+                                </div>
+                                <div class="service-review__mark">
+                                    <span class="rev-number">4,5/5</span>
+                                    <img src="assets/images/45star.png" alt="" class="stars">
+                                </div>
+                            </a>
+                            <a target="_blank" rel="noopener" href="https://topdent.ru/clinics/dent-servis3/"
+                                class="service-review">
+                                <div class="service-review__logo">
+                                    <img src="assets/images/topdent.png" alt="" class="service-review__logo__img">
+                                    <span class="rev-count">82 отзыва</span>
+                                </div>
+                                <div class="service-review__mark">
+                                    <span class="rev-number">4,8/5</span>
+                                    <img src="assets/images/48star.png" alt="" class="stars">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services-reviews_row">
+                            <a target="_blank" rel="noopener" href="https://www.32top.ru/clinics/1909/"
+                                class="service-review">
+                                <div class="service-review__logo">
+                                    <img src="assets/images/32-top.png" alt="" class="service-review__logo__img">
+                                    <span class="rev-count">13 отзывов</span>
+                                </div>
+                                <div class="service-review__mark">
+                                    <span class="rev-number">4,5/5</span>
+                                    <img src="assets/images/45star.png" alt="" class="stars">
+                                </div>
+                            </a>
+                            <a target="_blank" rel="noopener" href="https://maps.app.goo.gl/FqiTwonuUNPiNpkW7"
+                                class="service-review">
+                                <div class="service-review__logo">
+                                    <img src="assets/images/google.png" alt="" class="service-review__logo__img">
+                                    <span class="rev-count">44 отзыва</span>
+                                </div>
+                                <div class="service-review__mark">
+                                    <span class="rev-number">4,7/5</span>
+                                    <img src="assets/images/48star.png" alt="" class="stars">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="desctrev" style="width:100%;height:500px;overflow:hidden;position:relative;"><iframe
+                                style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:20px;box-sizing:border-box"
+                                src="https://yandex.ru/maps-reviews-widget/1005507806?comments"></iframe>
+                        </div>
+                    </div>
+                    <div class="swiper reviews__swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide slide1">
+                                <video controls poster="assets/images/promo__rev.png"
+                                    src="assets/videos/first__review.MP4" class="first__review"></video>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <video controls src="assets/videos/second__review.MP4" class="second__review"></video>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <video controls src="assets/videos/third__review.MP4" class="third__review"></video>
+                            </div>
+                            ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
+                <div class="reviews__wrapper">
+                    <div class="mobilerev" style="width:100%;height:700px;overflow:hidden;position:relative;"><iframe
+                            style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:20px;box-sizing:border-box"
+                            src="https://yandex.ru/maps-reviews-widget/1005507806?comments"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews-mobile">
+                <div class="reviews_h">
+                    <h2>Оценки и отзывы довольных пациентов</h2>
+                </div>
+                <div class="services-reviews_row">
+
+                    <a target="_blank" rel="noopener" href="https://topdent.ru/clinics/dent-servis3/"
+                        class="service-review">
+                        <div class="service-review__logo">
+                            <img src="assets/images/topdent.png" alt="" class="service-review__logo__img">
+                            <span class="rev-count">82 отзыва</span>
+                        </div>
+                        <div class="service-review__mark">
+                            <span class="rev-number">4,8/5</span>
+                            <img src="assets/images/48star.png" alt="" class="stars">
+                        </div>
+                    </a>
+                    <a target="_blank" rel="noopener"
+                        href="https://www.yell.ru/moscow/com/stomatologicheskaya-klinika-dent-servis_5629142/"
+                        class="service-review">
+                        <div class="service-review__logo">
+                            <img src="assets/images/yell.png" alt="" class="service-review__logo__img">
+                            <span class="rev-count">91 отзыв</span>
+                        </div>
+                        <div class="service-review__mark">
+                            <span class="rev-number">4,8/5</span>
+                            <img src="assets/images/48star.png" alt="" class="stars">
+                        </div>
+                    </a>
+                </div>
+                <div class="services-reviews_row">
+                    <a href="https://go.2gis.com/zWW9g" class="service-review">
+                        <div class="service-review__logo">
+                            <img src="assets/images/2gis.png" alt="" class="service-review__logo__img">
+                            <span class="rev-count">21 отзыв</span>
+                        </div>
+                        <div class="service-review__mark">
+                            <span class="rev-number">4,8/5</span>
+                            <img src="assets/images/48star.png" alt="" class="stars">
+                        </div>
+                    </a>
+                    <a target="_blank" rel="noopener" href="https://maps.app.goo.gl/FqiTwonuUNPiNpkW7"
+                        class="service-review">
+                        <div class="service-review__logo">
+                            <img src="assets/images/google.png" alt="" class="service-review__logo__img">
+                            <span class="rev-count">44 отзыва</span>
+                        </div>
+                        <div class="service-review__mark">
+                            <span class="rev-number">4,7/5</span>
+                            <img src="assets/images/48star.png" alt="" class="stars">
+                        </div>
+                    </a>
+
+                </div>
+                <div class="services-reviews_row">
+                    <a target="_blank" rel="noopener"
+                        href="https://zoon.ru/msk/medical/stomatologicheskaya_klinika_dent_servis_v_yasenevo/"
+                        class="service-review">
+                        <div class="service-review__logo">
+                            <img src="assets/images/zoon.png" alt="" class="service-review__logo__img">
+                            <span class="rev-count">195 отзывов</span>
+                        </div>
+                        <div class="service-review__mark">
+                            <span class="rev-number">4,5/5</span>
+                            <img src="assets/images/45star.png" alt="" class="stars">
+                        </div>
+                    </a>
+
+                    <a target="_blank" rel="noopener" href="https://www.32top.ru/clinics/1909/" class="service-review">
+                        <div class="service-review__logo">
+                            <img src="assets/images/32-top.png" alt="" class="service-review__logo__img">
+                            <span class="rev-count">13 отзывов</span>
+                        </div>
+                        <div class="service-review__mark">
+                            <span class="rev-number">4,5/5</span>
+                            <img src="assets/images/45star.png" alt="" class="stars">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper reviews__swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide1">
+                            <video controls poster="assets/images/promo__rev.png" src="assets/videos/first__review.MP4"
+                                class="first__review"></video>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <video controls src="assets/videos/second__review.MP4" class="second__review"></video>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <video controls src="assets/videos/third__review.MP4" class="third__review"></video>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="reviews__wrapper">
+                    <div class="mobilerev" style="width:100%;height:700px;overflow:hidden;position:relative;"><iframe
+                            style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:20px;box-sizing:border-box"
+                            src="https://yandex.ru/maps-reviews-widget/1005507806?comments"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="map__widget" id="section5">
+            <div class="map-widget-background"></div>
+            <div class="map_h">
+                <h2>Ждем вас в Дент Сервис!</h2>
+            </div>
+            <div class="map-widget__wrapper">
+                <div class="howtodirect">
+                    <div class="map__adres">г. Москва, ул. Вильнюсская, д. 13</div>
+                    <div class="metro-wrapper">
+                        <div class="first__metro">
+                            <div class="logo__name">
+                                <img src="assets/images/metro1.png" alt="Логотип метро" class="metrr">
+                                <div class="logo__text">Ясенево</div>
+                            </div>
+                            <div class="buses">
+                                <img src="assets/images/bus.svg" alt="Логотип автобуса">
+                                <div class="buses__numbers">
+                                    264, т72
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first__metro">
+                            <div class="logo__name">
+                                <img src="assets/images/metro1.png" alt="Логотип метро" class="metrr">
+                                <div class="logo__text">Теплый стан</div>
+                            </div>
+                            <div class="buses">
+                                <img src="assets/images/bus.svg" alt="Логотип автобуса">
+                                <div class="buses__numbers">
+                                    т72, 281, 264
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-time">
+                    <div class="work-time-adv">
+                        <div class="good__place">
+                            <span class="good-place__span">Хорошее место 2023</span>
+                        </div>
+                        <div class="free-parking">
+                            <span class="free-parking__span">Бесплатная парковка</span>
+                        </div>
+                    </div>
+                    <div class="work-time-descr">
+                        <div class="weekdays">
+                            Пн - Сб: с 9:00 до 21:00
+                        </div>
+                        <div class="sunday">
+                            Вс: с 9:00 до 20:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="map__wrapper" style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/org/dent_servis/1005507806/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Дент Сервис</a><a
+                href="https://yandex.ru/maps/213/moscow/category/dental_clinic/184106132/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Стоматологическая клиника в
+                Москве</a><a
+                href="https://yandex.ru/maps/213/moscow/category/dental_polyclinic/184106130/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:28px;">Стоматологическая поликлиника
+                в Москве</a><iframe class="map__frame"
+                src="https://yandex.ru/map-widget/v1/?ll=37.519486%2C55.598411&mode=search&oid=1005507806&ol=biz&z=17.08"
+                width="100%" height="400" frameborder="0" scroll="false" allowfullscreen="true"
+                style="position:relative;"></iframe>
+        </div>
+        <div id="yandex-map">
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <section class="questions-contacts">
+                <div class="logo-and-numbers">
+                    <img src="assets/images/logodentservice1.svg" alt="" class="footer-logo">
+                    <div class="social_media">
+                        <a rel="noopener" href="https://vk.com/dentserv" target="_blank" class="social">
+                            <img src="assets/images/vk_icon.svg" alt="" class="vk-logo">
+                        </a>
+                        <a rel="noopener" href="https://wa.me/+79154220922?text=Здравствуйте! Мы клиника Дент Сервис."
+                            target="_blank" href="" class="social">
+                            <img src="assets/images/wa__icon.svg" alt="" class="wa-logo">
+                        </a>
+                    </div>
+                    <div class="licence-copy">
+                        <a target="_blank" rel="noopener" href="https://dentserv.ru/documents" class="licence-link">
+                            <span class="licence-copyright">Лицензия</span>
+                        </a>
+                        <a target="_blank" rel="noopener" href="https://dentserv.ru/policy" class="copyright-link">
+                            <span class="licence-copyright">Политика конфиденциальности</span>
+                        </a>
+                    </div>
+                    <div class="numbers">
+                        <a href="tel:+7 (495) 422-03-11" class="first__number">+7 (495) 422-03-11</a>
+                        <a href="tel:+7 (495) 422-09-22" class="first__number">+7 (495) 422-09-22</a>
+                    </div>
+                </div>
+                <div class="logo-and-numbersm">
+                    <div class="logo-and-numbers__wrapper">
+                        <img src="assets/images/logodentservice1.svg" alt="" class="footer-logo">
+                        <div class="numbers">
+                            <a href="tel:+7 (495) 422-03-11" class="first__number">+7 (495) 422-03-11</a>
+                            <a href="tel:+7 (495) 422-09-22" class="first__number">+7 (495) 422-09-22</a>
+                        </div>
+                    </div>
+                    <div class="social_media">
+                        <a rel="noopener" href="https://vk.com/dentserv" target="_blank" class="social">
+                            <img src="assets/images/vk_icon.svg" alt="" class="vk-logo">
+                        </a>
+                        <a rel="noopener" href="https://wa.me/+79154220922?text=Здравствуйте! Мы клиника Дент Сервис."
+                            target="_blank" href="" class="social">
+                            <img src="assets/images/wa__icon.svg" alt="" class="wa-logo">
+                        </a>
+                    </div>
+                    <div class="licence-copy">
+                        <a target="_blank" rel="noopener" href="https://dentserv.ru/documents" class="licence-link">
+                            <span class="licence-copyright">Лицензия</span>
+                        </a>
+                        <a target="_blank" rel="noopener" href="https://dentserv.ru/policy" class="copyright-link">
+                            <span class="licence-copyright">Политика конфиденциальности</span>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <div class="copyright__block">
+                © 2007 - 2024. Общество с ограниченной ответственностью «ДЕНТ СЕРВИС»<br>
+                Сайт носит информационный характер и не является публичной офертой. Возможны противопоказания.
+                Необходимо проконсультироваться со специалистом.
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/doc-modal.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+        // Функция ymaps.ready() будет вызвана, когда
+        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+        ymaps.ready(init);
+        function init() {
+            // Создание карты.
+            var myMap = new ymaps.Map("yandex-map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [55.598716, 37.519276],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 16,
+                controls: ['zoomControl', 'trafficControl', 'typeSelector', 'geolocationControl']
+            });
+            myMap.behaviors
+                // Отключаем часть включенных по умолчанию поведений:
+                //  - drag - перемещение карты при нажатой левой кнопки мыши;
+                //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
+                .disable(['scrollZoom', 'rightMouseButtonMagnifier']);
+
+            async function findAndAddOrganization(orgId, myMap) {
+                try {
+                    const orgGeoObject = await ymaps.findOrganization(orgId);
+                    console.log(orgGeoObject);
+                    orgGeoObject.options.set("preset", 'islands#redDotIcon');
+                    myMap.geoObjects.add(orgGeoObject);
+                    orgGeoObject.balloon.open();
+                } catch (error) {
+                    console.error('Ошибка при поиске организации:', error);
+                }
+            }
+
+            // Пример вызова функции
+            findAndAddOrganization('1005507806', myMap);
+        };
+    </script>
+</body>
+
+
+</html>
