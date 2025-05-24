@@ -1,3 +1,4 @@
+
 var swiper = new Swiper(".reviews__swiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -271,6 +272,43 @@ document.addEventListener('DOMContentLoaded', function() {
         
         return Math.round(basePrice);
     }
+});
+
+// Функционал модального окна калькулятора
+document.addEventListener('DOMContentLoaded', function() {
+    const calculatorModal = document.getElementById('calculatorModal');
+    const closeCalculator = document.querySelector('.close-calculator');
+    const calculatorButtons = document.querySelectorAll('[data-calculator="open"]');
+
+    // Открытие модального окна
+    calculatorButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            calculatorModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Закрытие модального окна
+    closeCalculator.addEventListener('click', function() {
+        calculatorModal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    // Закрытие по клику вне модального окна
+    calculatorModal.addEventListener('click', function(event) {
+        if (event.target === calculatorModal) {
+            calculatorModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Закрытие по Escape
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && calculatorModal.classList.contains('active')) {
+            calculatorModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
 });
 
 
